@@ -1,0 +1,91 @@
+*{
+    font-family: lato;
+    
+}
+
+.menu-header-bg{
+    height: 180px;
+    width:350px;
+    background-color: #F875AA;
+    background:  linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);
+    box-shadow: 0px 1px 10px rgba(98, 140, 255, 0.5);
+    transform: rotate(-15deg);
+    border-radius: 10px 10px 10px 150px ;
+    margin-left: -18px;
+    margin-top: -50px;
+    margin-bottom:60px;
+}
+
+.header-content{
+    position:absolute;
+    top:30px;
+    left:15px;
+    display:flex;
+    align-items:center;
+}
+
+ion-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #E95793;
+}
+
+h2{
+    font-family: 'BrownieCream';
+    color:#DA0C81;
+    font-size: 20px;
+}
+
+p{
+    font-size: 12px;
+    color:white;
+    font-family: 'Worksans';
+    letter-spacing: 0.4px;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+    
+    
+
+   /** ion-button{
+        text-transform: capitalize;
+        font-weight:300;
+        font-family:'Worksans';
+        --background: linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);;
+        --border-radius: 7px;
+        --box-shadow: none;
+    }**/
+
+}
+
+.menu-items{
+    display:block;
+    margin: 0px;
+    
+    ion-icon{
+        margin-right: 10px;
+        
+    }
+
+    ion-button{
+        font-size: 15px;
+        font-family:'Worksans';
+       
+        --background: linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);;
+        --border-radius: 7px;
+        --box-shadow: none;
+        --padding-top:15px;
+        --padding-bottom:15px;
+        --padding-end:140px;
+
+    }
+
+    ion-button:hover{
+        --background:white;
+        color:#F875AA;
+    }
+
+}

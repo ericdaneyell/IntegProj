@@ -1,0 +1,47 @@
+ion-content{
+    --background:  linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);
+ 
+}
+
+ion-label{
+
+    font-family:'BrownieCream';
+    color:white;
+    font-size:30px;  
+    justify-content:center;
+    display:flex;
+    margin-top:60px;
+}
+
+ion-img{
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    margin-top:-30px;
+    display:flex; 
+}
+
+
+
+div{
+    position:absolute;
+    display:flex;
+    bottom:30px;
+    right: 20px;
+}
+
+p{
+    font-family:candara;
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    margin-right:5px;
+}
+
+ion-button{
+    --background:#DA0C81;
+    padding:10px;   
+    --border-radius:15px;
+ }
+
+
