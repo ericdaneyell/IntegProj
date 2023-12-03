@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img class="logo" src="../../../assets/images/frostbite.png">
+  <div class="wrapper">
+
+  <ion-card>
+    <ion-item lines="none"><h1>Login</h1></ion-item>
+    <ion-item lines="none"><p>Please sign in to continue.</p></ion-item>
+    <ion-item lines="none"><p>Username</p></ion-item>
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon><ion-input [(ngModel)]="username" class="username"></ion-input>
+    </ion-item>
+    <ion-item lines="none"><p>Password</p></ion-item>
+    
+    <ion-item>      
+      <ion-icon name="lock-closed-outline"></ion-icon> <ion-input [(ngModel)]="password" class="password"></ion-input>
+    </ion-item> 
+    <ion-button (click)="signIn()">Sign In</ion-button>
+    <ion-item class="signup">
+      <p>No account yet?</p>
+      <a href="signup">Sign Up</a>
+    </ion-item>
+
+  </ion-card>
+  </div>
+</ion-content>

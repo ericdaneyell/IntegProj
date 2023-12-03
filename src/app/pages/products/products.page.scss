@@ -1,0 +1,118 @@
+ion-fab-button {
+    height: 60px;
+    width: 60px;
+    --background:#DA0C81;
+    
+}
+
+ion-card{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.mycart{
+    font-family:'Space';
+    font-size: 20px;
+    font-weight:500;
+}
+
+ion-list{
+    background-color:#f79fc2;
+}
+ion-card-title{
+    font-weight:bold;
+}
+.toolbar{
+    --background:  linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);   
+    
+  }
+
+
+.cart-icon {
+    font-size: 40px;
+    
+}
+
+.cart-length {
+    color: #DA0C81;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    min-width: 25px;
+    z-index: 10;
+}
+
+.rating{
+    font-size:20px;
+    position:absolute;
+    top:55px;
+}
+
+ion-card{
+    font-family:'Space';
+}
+
+img{
+    position:absolute;
+}
+
+.choco{
+    width:50px;
+    top:28%;
+    left:50%;
+}
+
+.matcha{
+    width:120px;
+    top:80%;
+    left:42%;
+}
+
+.cheese{
+    width:50px;
+    top:53%;
+    left:50%;
+}
+
+.strawberry{
+    width:50px;
+    top:1%;
+    left:50%;
+}
+
+.rockyroad{
+    width:90px;
+    left:50%;
+    top:105%;
+}
+
+.coffee{
+    width:105px;
+    left:45%;
+    top:135%;
+}
+
+.pistachio{
+    width:125px;
+    top:160%;
+    left:43%;
+}
+
+.mango{
+    width:85px;
+    left:50%;
+    top:182%;
+}
+
+.watermelon{
+    width:90px;
+    left:50%;
+    top:208%;
+}
+
+.cherry{
+    width:120px;
+    left:47%;
+    top:235%;
+}

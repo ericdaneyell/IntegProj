@@ -1,0 +1,43 @@
+
+ion-content{
+    
+    --background:  linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);
+}
+.wrapper{
+    position:absolute;
+    top:8%;
+    width:100%;
+}
+ion-button{
+    position:relative;
+    width:25%;
+    --background:#F875AA;
+    font-family:'Space';
+    margin-top:10px;
+    margin-bottom:10px;
+}
+ion-card{
+    display:block;
+    text-align:center;
+    font-family:'Space';
+}
+
+ion-item{
+    display:block;
+    width:94%;
+    left:3%;
+    font-family:'Space';
+    border:none;
+}
+
+.username,.password{
+    position:relative;
+    margin-top:10px; 
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+ion-input:hover{
+    border:#F875AA;
+}
+
+

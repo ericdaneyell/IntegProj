@@ -1,13 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>products</ion-title>
+<ion-header  class="ion-no-border" [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-text class="mycart">Ice Creams</ion-text>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToHome()"><ion-icon name="chevron-back"></ion-icon>Prev</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">products</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <ion-content class="background">
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="openCart()" #cart>
+      <div class="cart-length">{{ cartItemCount | async }}</div>
+      <ion-icon name="cart" class="cart-icon"></ion-icon>
+    </ion-fab-button>
+    </ion-fab>
+  <ion-list>
+    <ion-card *ngFor="let p of products">
+    <ion-card-header>
+    <ion-card-title>{{ p.name }}</ion-card-title>
+    <ion-text> {{p.type}}</ion-text>
+    <ion-text class="rating">{{p.rating}}</ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <ion-label color="secondary">
+            <b>{{p.price | currency:'USD'}}</b>
+          </ion-label>
+        </ion-col>
+        <ion-col size="4" class="ion-text-right">
+          <ion-button fill="clear" (click)="addToCart(p)">
+            <ion-icon name="add"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  </ion-list>
+  <img class="strawberry" src="../../../assets/images/strawberry-removebg-preview.png">
+  <img class="choco" src="../../../assets/images/chocolate-removebg-preview.png">
+  <img class="matcha" src="../../../assets/images/matcha-removebg-preview.png">
+  <img class="cheese" src="../../../assets/images/cheese-removebg-preview.png">
+  <img class="rockyroad" src="../../../assets/images/rockyroad-removebg-preview.png">
+  <img class="coffee" src="../../../assets/images/coffee-removebg-preview.png">
+  <img class="pistachio" src="../../../assets/images/pistachio-removebg-preview.png">
+  <img class="mango" src="../../../assets/images/mango-removebg-preview.png">
+  <img class="watermelon" src="../../../assets/images/watermelon-removebg-preview.png">
+  <img class="cherry" src="../../../assets/images/cherry-removebg-preview.png">
+  </ion-content>

@@ -1,48 +1,63 @@
 <ion-header  class="ion-no-border" [translucent]="true">
-  <ion-toolbar id="nav" color="custom-grad">
+  <ion-toolbar class="toolbar">
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="flex-center">
-  
 
-  <div id="container">
-      <img id="icecream" src="../../assets/images/transp-icecream.png">
-      <ion-label id="home-title">Frostbite</ion-label>
-    <swiper-container>
-      <swiper-slide>
-        <ion-card>
-  <ion-card-header>
-    <br><br>
-    <ion-card-title>Ice cream is an addiction, and we’re here to help!</ion-card-title> 
-  </ion-card-header>
-  <ion-text id="pagination" style="color:#DA0C81">.</ion-text><ion-text id="pagination" style="color:dimgrey">.</ion-text><ion-text id="pagination" style="color:dimgrey">.</ion-text>
-</ion-card>
-      </swiper-slide>
-      <swiper-slide>
-        <ion-card>
-          <ion-card-header>
-            <br><br>
-            <ion-card-title>Return to your childhood with our soft serve.</ion-card-title>
-          </ion-card-header>
-          <ion-text id="pagination">.</ion-text><ion-text id="pagination" style="color:#DA0C81">.</ion-text><ion-text id="pagination">.</ion-text>
-        </ion-card>
-      </swiper-slide>
-      <swiper-slide>
-        <ion-card>
-          <ion-card-header>
-            <br><br>
-            <ion-card-title>Dessert doesn’t get any better than this.</ion-card-title> 
-          </ion-card-header>
-          <ion-text id="pagination">.</ion-text><ion-text id="pagination">.</ion-text><ion-text id="pagination" style="color:#DA0C81">.</ion-text>
-        </ion-card>
-      </swiper-slide>
-    </swiper-container>
-    
+<ion-content [fullscreen]="true">
+  <img src="../../assets/images/transp-icecream.png" class="top-img">
+<div class="hero">
+    <ion-text>THE WORLD OF <br><span>yummmm</span></ion-text>
+</div>
+
+
+<div class="items-header">
+  <ion-text class="asd">Popular</ion-text>
+</div>
+
+<div class="items">
+<ion-text class="category1">Cones</ion-text>
+<div class="item1" id="item1">
+<ion-item class="strawberry" id="flavor" lines="none" (click)="goToCart()">Strawberry</ion-item>
+<img class="straw-img" src="../../assets/images/strawberry-removebg-preview.png">
+<p class="price">$5.50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★★</p>
+</div>
+<div class="item2" id="item2">
+  <ion-item class="choco" id="flavor" lines="none" (click)="goToCart()">Chocolate</ion-item>
+  <img class="choco-img" src="../../assets/images/chocolate-removebg-preview.png">
+  <p class="price">$4.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★☆</p>
   </div>
+</div>
+
+<div class="items2">
+  <ion-text class="category1">Cup</ion-text>
+  <div class="item3" id="item1">
+  <ion-item class="pistachio" id="flavor" lines="none" (click)="goToCart()">Pistachio</ion-item>
+  <img class="pist-img" src="../../assets/images/pistachio-removebg-preview.png">
+  <p class="price">$2.50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★☆</p>
   </div>
+  <div class="item4" id="item2">
+    <ion-item class="rocky" id="flavor" lines="none" (click)="goToCart()">Rocky Road</ion-item>
+    <img class="rocky-img" src="../../assets/images/rockyroad-removebg-preview.png">
+    <p class="price">$3.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★☆</p>
+    </div>
+  </div>
+
+  <div class="items3">
+    <ion-text class="category1">Candy</ion-text>
+    <div class="item5" id="item1">
+    <ion-item class="mango" id="flavor" lines="none" (click)="goToCart()">Mango</ion-item>
+    <img class="mango-img" src="../../assets/images/mango-removebg-preview.png">
+    <p class="price">$2.50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★☆</p>
+    </div>
+    <div class="item6" id="item2">
+      <ion-item class="watermelon" id="flavor" lines="none" (click)="goToCart()">Watermelon</ion-item>
+      <img class="melon-img" src="../../assets/images/watermelon-removebg-preview.png">
+      <p class="price">$3.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★★</p>
+      </div>
+    </div>
+
 </ion-content>

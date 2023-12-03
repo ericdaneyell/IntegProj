@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SplashscreenPageRoutingModule } from './splashscreen-routing.module';
+import { SignupPageRoutingModule } from './signup-routing.module';
 
-import { SplashscreenPage } from './splashscreen.page';
+import { SignupPage } from './signup.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SplashscreenPageRoutingModule
+    SignupPageRoutingModule
   ],
-  declarations: [SplashscreenPage]
+  declarations: [SignupPage]
 })
-export class SplashscreenPageModule {}
+export class SignupPageModule {}

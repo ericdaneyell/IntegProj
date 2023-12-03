@@ -1,118 +1,253 @@
+.toolbar{
+  --background:  linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);   
+  width:80%;
+}
 
-#container {
-  text-align:center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  transform: translateY(-50%);
-  margin-left:0px;
- 
-.flex-center{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+ion-content{
+  width:100%;
   height:100%;
 }
 
+.hero{
+  position:relative;
+  background:linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);
+  width:80%;
+  height:55%;
+  border:none;
+  border-bottom-right-radius:20px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-text{
+  position:absolute;
+  font-family:'Space';
+  font-size:20px;
+  color:white;
+  top:10%;
+  left:10%;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-/**ion-content,**/ ion-toolbar{
-  --background:  linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);   
-}
-
-#home-title{
-  display:flex;
+span{
   font-family:'BrownieCream';
-  color:#DA0C81;
-  justify-content:center;
-  font-size:30px;
-  align-items:center;
-  position:relative;
-  margin-right: -160px;
-  top:5px;
+  font-size:25px;
 }
 
-#icecream{
-  display:flex;
+img{
   position:absolute;
-  width: 350px;
-  /**right:100px;
-  top:-150px;**/
-  justify-content:center;
-  align-items:center;
-  margin-left: -60px;
-  top:-190px;
-  
+  z-index:1;
+  top:20%;
+  left:30%;
+  width:70%;
 }
 
-#icecream:hover{
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+ion-icon{
+  color:black;
 }
 
-
-swiper-container{
+.product-menu{
   position:relative;
   display:flex;
+  flex-direction:row;
+  width:100%;
   justify-content:center;
-  align-items:end;
-  top:100px;
-  /**top:100px;
-  bottom:40px;
-  left:-20px;**/
-  
-  
+  margin-top:20px;
 }
 
-ion-card{
-  border-radius: 20px;
-  background: linear-gradient(90deg,#F875AA 0% ,#FFDFDF 100%);   
-  font-family: 'Worksans';
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin:20px;
+ion-button{
+  --background:white;
+    font-size:20px; 
+}
+ion-button:hover{
+  --background:#DA0C81;
 }
 
-#pagination{
-  font-size:60px;
-  line-height:5px;
-  bottom:10px;
-  
+.button-label{
+  text-align:center;
+  font-weight:bold;
+  color:gray;
 }
 
-ion-card-title{
-  color:#DA0C81;
+.button-label:hover{
+color:#DA0C81;
 }
 
-ion-footer{
+ion-label{
+  font-family:'Space';
+}
+ .items-header{
+  display:flex;
   position:absolute;
-  top:350px;
-  width:fit-content;
+  width:90%;
+  margin-top:10px;
+ }
+
+ .asd{
+  position:absolute;
+  color:#DA0C81;
+  font-weight:bold;
+ }
+
+ .items{
+  position:relative;
+  top:12%;
+  width:80%;
+  left:10%;
+ }
+ .category1{
+  color:#780116;
+  top:-20%;
+  left:1%;
+ }
+.items2{
+  position:relative;
+  top:18%;
+  width:80%;
+  left:10%;
+}
+.items3{
+  position:relative;
+  top:24%;
+  width:80%;
+  left:10%;
 }
 
+p{
+  font-family:'Space';
+  margin-left:10px;
+}
 
+.item1{
+  background:#fc80b2;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:10px;
+  line-height:0.3;
+  margin-bottom:5px;
+  
+}
 
+.item2{
+  background:#C19A6B;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:10px;
+  line-height:0.3;
+  margin-bottom:10px;
+}
 
+.item3{
+  background:#93C572;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:10px;
+  line-height:0.3;
+  margin-bottom:5px;
+}
 
+.item4{
+  background:#5C2C15;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:10px;
+  line-height:0.3;
+  margin-bottom:5px;
+}
 
+.item5{
+  background:#f5c55e;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:10px;
+  line-height:0.3;
+  margin-bottom:5px;
+}
 
+.item6{
+  background:radial-gradient( circle farthest-corner at 10% 20%, rgba(221,6,24,1) 0.3%, rgba(254,164,201,1) 90% );
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius:10px;
+  line-height:0.3;
+  margin-bottom:5px;
+}
+
+.price{
+  color:white;
+}
+
+#flavor{
+  font-weight:bold;
+  --background:none;
+  --padding-start:none;
+  --padding-end:none;
+  font-family:'Space';
+  margin-left:10px;
+  --min-height: 30px;
+}
+
+.strawberry{
+  color:#b10366;
+  
+}
+
+.choco{
+  color:#7e4603;
+}
+
+.pistachio{
+  color:#418a11;
+}
+
+.rocky{
+  color:#f5a986;
+}
+
+.mango{
+  color:#aa7504
+}
+
+.watermelon{
+  color:rgb(250, 180, 209);
+}
+
+.straw-img{
+  width:40px;
+  position:absolute;
+  top:-12%;
+  left:80%;
+}
+
+.choco-img{
+  width:38px;
+  position:absolute;
+  top:43%;
+  left:80%;
+}
+
+.pist-img{
+  width:40%;
+  position:absolute;
+  top:-5%;
+  left:62%;
+}
+
+.rocky-img{
+  width:27%;
+  position:absolute;
+  top:40%;
+  left:72%;
+}
+
+.mango-img{
+  width: 22%;
+  position:absolute;
+  top:-11%;
+  left:75%;
+}
+
+.melon-img{
+  width:22%;
+  position:absolute;
+  top:40%;
+  left:75%;
+}
 
